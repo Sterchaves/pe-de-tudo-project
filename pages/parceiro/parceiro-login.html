@@ -1,18 +1,22 @@
 <!DOCTYPE html>
-<html lang="PT_BR">
+<html lang="PT-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
     <link rel="stylesheet" href="/style/reset.css">
+    <link rel="stylesheet" href="/style/home/menu.css">
+    <link rel="stylesheet" href="/style/parceiro-main/parceiro-login.css">
+
     <title>LOGIN - PARCEIRO</title>
 </head>
 <body>
     <header>
         <img src="/imgs/logo.png">
-        <nav class="menu">
-            <ul>
+        <nav >
+            <ul class="menu">
                 <li><a href="/pages/home.html">Quem Somos</a></li>
-                <li><a href="#">Seja Parceiro</a></li>
+                <li><a href="/pages/parceiro/parceiro-login.html">Seja Parceiro</a></li>
                 <li><a href="/pages/cliente/cliente-login.html">Fazer Login</a></li>
             </ul>
         </nav>
@@ -20,15 +24,15 @@
 
     <main>
         <div class="container-login-parceiro">
-            <h2>Login</h2>
             <form action="">
+                <h2>Login</h2>
                 <label for="email">Email: </label>
                 <input type="email" placeholder="Email" id="email" required>
                 <label for="password">Senha: </label>
                 <input type="password" placeholder="Senha" id="password" required>
 
                 <button type="submit">Entrar</button>
-                <a href="/pages/cliente/esqueceu-senha.html" class="forgot-password">Esqueci a senha</a>
+                <a href="/pages/parceiro/parceiro-esqueceu-senha.html" class="forgot-password">Esqueci a senha</a>
                 <a href="/pages/parceiro/parceiro-cadastro.html" class="register">Cadastre-se</a>
             </form>
         </div>

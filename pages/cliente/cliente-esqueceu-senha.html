@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+
     <link rel="stylesheet" href="/style/reset.css">
-    <title>ESQUECEU A SENHA - PARCEIRO</title>
+    <link rel="stylesheet" href="/style/home/menu.css">
+    <link rel="stylesheet" href="/style/cliente-main/cliente-esqueceu-senha.css">
+    <title>ESQUECEU A SENHA - CLIENTE</title>
 </head>
 <body>
     <header>
         <img src="/imgs/logo.png">
-        <nav class="menu">
-            <ul>
+        <nav >
+            <ul class="menu">
                 <li><a href="/pages/home.html">Quem Somos</a></li>
                 <li><a href="/pages/parceiro/parceiro-login.html">Seja Parceiro</a></li>
                 <li><a href="/pages/cliente/cliente-login.html">Fazer Login</a></li>
@@ -19,12 +23,13 @@
     </header>
 
     <main>
-        <div class="container-esqueceu-senha-parceiro">
-            <h2>Digite seu email para recuperar a senha</h2>
+        <div class="container-esqueceu-senha-cliente">
             <form action="">
+                <h2>Digite seu email para recuperar a senha</h2>
                 <label for="email">Email: </label>
                 <input type="email" placeholder="Email" id="email" required>
-                <button type="submit">Entrar</button>
+                <button type="submit">Enviar</button>
+                <a href="/pages/cliente/cliente-login.html" class="forgot-password">Voltar ao login</a>
             </form>
         </div>
 
