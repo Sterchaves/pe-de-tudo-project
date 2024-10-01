@@ -1,0 +1,36 @@
+ header{
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ header img{
+    height: 70px; /* Define a altura */
+    width: auto;
+    margin-left: 30px;
+    margin-bottom: 15px;
+ }
+
+ header .menu{
+    display: flex;
+    margin-right: 20px;
+    font-size: 40px;
+ }
+
+ header .menu li{
+    margin: 0 2rem;
+ }
+
+ header .menu li a{
+    padding: 2rem 1rem;
+    transition: 0.1s ease-in-out;
+    color: black;
+ }
+
+ header .menu li a:hover{
+    font-weight: bold;
+ }
+
+
+

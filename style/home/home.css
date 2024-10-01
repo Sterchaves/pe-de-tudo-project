@@ -1,0 +1,194 @@
+/* BANNER */
+.container-banner{
+    height: 80rem;
+    width: 100%;
+    background: url(/imgs/main-banner.jpg) no-repeat fixed;
+    background-size: cover;
+    color: white;
+    text-align: center;
+ 
+}
+
+.container-banner h1{
+    font-size: 20rem;
+    text-shadow: 1rem 1rem 0.5rem black;
+    transform: translateY(120%); 
+ }
+ 
+ @media (max-width: 920px) {
+    .container-banner h1{
+        font-size: 15rem;
+        text-shadow: 1rem 1rem 0.5rem black;
+        transform: translateY(120%); 
+     }
+ }
+ 
+
+/* SOBRE */
+.container-sobre{
+    background-color: rgb(255, 115, 0);
+    display: flex;
+    flex-direction: column;
+    height: 80rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-sobre .content{
+    max-width: 900px;
+    margin-bottom: 5rem;
+    color: white;
+}
+
+.container-sobre .content h2{
+    font-size: 48px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+.container-sobre .content p{
+    font-size: 22px;
+    text-align: justify;
+    font-family: Open Sans, sans-serif;
+}
+
+/* O QUE FAZEMOS */
+.container-whatwedo{
+    height: 70rem;
+    background-color: rgb(255, 115, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.container-whatwedo h2{
+    font-size: 60px;
+    color: white;
+    margin: 1rem 0 2rem 0;
+}
+
+.container-whatwedo .contents{
+    max-width: 950px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container-whatwedo .contents .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    width: 48rem;
+    height: 42rem;
+    background-color: #fdfdfd;
+    border-radius: 2.5rem;
+    margin: 0 2rem;
+    padding: 2rem;
+}
+
+.container-whatwedo .contents .content h3{
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.container-whatwedo .contents .content p{
+    font-size: 19px;
+    font-family: Open Sans, sans-serif;
+    text-align: center;
+}
+
+
+
+/* COMO FAZEMOS */
+.container-howto{
+    background-color: rgb(255, 115, 0);
+    height: 70rem;
+}
+
+.container-howto h2{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 5rem;
+}
+
+.container-howto .content{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.container-howto .content .photo{
+    background: url(/imgs/photo-one.jpg) no-repeat center center;
+    background-size: cover; 
+    width: 60rem;
+    height: 40rem;
+    border-radius: 2.5rem;
+}
+
+.container-howto .text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 4rem;
+    color: white;
+    max-width: 40%;
+    height: 30rem;
+    justify-content: space-between;
+    text-align: justify;
+    margin-left: 1.5rem;
+}
+
+
+.container-howto .text h3{
+    font-size: 38px;
+    font-family: Open sans, sans-serif;
+}
+
+.container-howto .text .buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 40px;
+}
+
+.container-howto .text .buttons h4{
+    margin: 0 4rem;
+}
+
+.container-howto .text .buttons a{
+    color: black;
+    background-color: #fdfdfd;
+    padding: 0.7rem 5rem; 
+    border-radius: 2.5rem;
+}
+
+
+
+
+/* FOOTER */
+
+footer {
+    background-color: rgb(255, 115, 0);
+    font-family: Open sans,  sans-serif;
+    color:white;
+    text-align: center;
+    font-size: 24px;
+    padding: 4rem 0;
+    position: relative; /* Necessário para posicionar o pseudo-elemento */
+}
+
+footer::before {
+    content: ''; /* Cria o pseudo-elemento */
+    position: absolute;
+    top: 0; /* Posiciona no topo do footer */
+    left: 15%; /* Centraliza o pseudo-elemento, 15% de cada lado */
+    width: 70%; /* Define a largura da borda como 70% do footer */
+    border-top: white solid 1px; /* Define a borda */
+}
