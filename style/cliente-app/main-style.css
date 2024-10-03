@@ -1,0 +1,138 @@
+
+.container-mother{
+    display: flex;
+    width: 100vw;
+    height: auto;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+/* MAIN NAVBAR */
+.container-first-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #bbbbbb;
+    width: 20vw;
+    height: 100vh;
+    font-size: 30px;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.container-first-child #logo{
+    width: auto;
+    height: 75px;
+    margin-bottom: 5rem;
+}
+
+.container-first-child .name-id{
+    font-size: 24px;
+    padding-bottom: 5rem;
+}
+
+.container-first-child .menu{
+    font-size: 30px;
+}
+
+.container-first-child .menu li{
+    margin: 1.5rem 0;
+}
+
+.container-first-child .menu li a{
+    color: black;
+    transition: 0.1s ease-in-out;
+}
+
+.container-first-child .menu li a:hover{
+    font-weight: bold;
+}
+
+.container-first-child h3 a{
+    font-size: 33px;
+    color: black;
+    font-weight: normal;
+    transition: 0.1s ease-in-out;
+}
+
+.container-first-child h3 a:hover{
+    font-weight: bold;
+}
+
+
+/* SEARCH AND LOCAL */
+.container-second-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.container-second-child .container-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 2rem 10%;
+    width: 80vw;
+    height: 8vh;
+}
+
+/* SEARCH */
+.container-second-child .container-header .container-search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:50vw;
+ 
+}
+
+.container-second-child .container-header .container-search .search-bar{
+display: flex;
+align-items: center;
+flex-direction: row-reverse;
+}
+
+.search-button{
+    width: auto;
+    height: 30px;
+    padding-right: 1rem;
+}
+
+.container-second-child .container-header .container-search .search-bar input{
+    padding: 1px 2px 1px 7px;
+    font-size: 20px;
+    width: 17vw; 
+    height: 40px;
+    border-radius: 2.5rem;
+}
+
+/* LOCAL */
+.container-second-child .container-header .address{
+    display: flex;
+    align-items: center;
+}
+
+.container-second-child .container-header .address .local-pointer{
+    width:auto;
+    height:30px;  
+    margin: 0 1rem;
+}
+
+/* CART */
+.container-second-child .container-header .cart{
+    width:auto;
+    height:70px;
+}
+
+/* MAIN CONTENT */
+.container-second-child .container-content{
+    background-color: rgb(243, 154, 20);
+    width: 65vw;
+    height: 75vh;
+    border-radius: 2.5rem;
+    overflow: auto;
+}
+
+ 
