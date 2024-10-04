@@ -239,3 +239,116 @@
 
 
 /* PÁGINA MEUS PEDIDOS */
+.purchase-hour.one.status span{
+    color: rgb(107, 179, 0);
+}
+
+.purchase-hour.two.status span{
+    color: rgb(228, 194, 0);
+}
+
+
+/* PÁGINA SUPORTE */
+
+
+/* FAQ */
+.container-faq {
+    height: 70rem;
+    text-align: center;
+    padding: 4rem 0;
+  }
+  
+  .container-faq h1 {
+    font-size: 55px;
+    font-weight: normal;
+    margin: 6rem 0;
+  }
+  
+  .container-faq .categories {
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+  }
+  
+  .container-faq .category {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    border-bottom: 1px solid #0000004b;
+    margin-top: 1rem;
+  }
+  
+  .container-faq .category .pergunta {
+    font-size: 35px;
+    font-weight: normal;
+    width: 100%;
+    text-align: start;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: ease-in-out 0.5ms;
+  }
+  
+  .container-faq .category .pergunta:hover {
+    color: #777777;
+  }
+  
+  .container-faq .category .resposta {
+    display: none;
+    padding-bottom: 15px;
+    font-size: 15px;
+    font-weight: 300;
+  }
+  
+  /* PERGUNTA ATIVA */
+  .container-faq .category.ativo .resposta {
+    display: block;
+    font-family: Open sans;
+    font-size: 18px;
+    font-weight: normal;
+  }
+  
+  .container-faq .category.ativo {
+    padding: 0.2rem 0 1rem 0;
+  }
+  
+  @media (max-width: 480px) {
+    .container-faq {
+      height: 60rem;
+      text-align: center;
+      padding: 4rem 0;
+    }
+  
+    .container-faq h1 {
+      font-size: 40px;
+      font-weight: normal;
+      margin: 6rem 0;
+    }
+  
+    .container-faq .category .pergunta {
+      font-size: 28px;
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  }
+  
+  @media (max-width: 370px) {
+    .container-faq {
+      height: 70rem;
+      text-align: center;
+      padding: 4rem 0;
+    }
+  
+    .container-faq h1 {
+      font-size: 40px;
+      font-weight: normal;
+      margin: 6rem 0;
+    }
+  
+    .container-faq .category .pergunta {
+      font-size: 28px;
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  }
+  
