@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- STYLE -->
+    <link rel="stylesheet" href="/style/reset.css" />
+    <link rel="stylesheet" href="/style/cliente-app/main-style.css" />
+    <link rel="stylesheet" href="/style/cliente-app/marketplace-home.css" />
+    <link rel="stylesheet" href="/style/cliente-app/carrinho.css" />
+    <title>CLIENTE APP - CARRINHO</title>
+  </head>
+  <body class="container-mother">
+    <header class="container-first-child">
+      <div>
+        <img src="/imgs/logo.png" id="logo" />
+        <h2 class="name-id">@Fulano</h2>
+        <ul class="menu">
+          <li>
+            <a href="/pages/cliente/cliente-app/cliente-app-home.html"
+              >Marketplace</a
+            >
+          </li>
+          <li>
+            <a href="/pages/cliente/cliente-app/cliente-app-meu-perfil.html"
+              >Meu Perfil</a
+            >
+          </li>
+          <li>
+            <a href="/pages/cliente/cliente-app/cliente-app-meus-pedidos.html"
+              >Meus Pedidos</a
+            >
+          </li>
+        </ul>
+      </div>
+      <h3>
+        <a href="/pages/cliente/cliente-app/cliente-app-suporte.html"
+          >Suporte</a
+        >
+      </h3>
+    </header>
+
+    <main class="container-second-child">
+      <div class="container-header">
+        <div class="container-search">
+          <div class="search-bar">
+            <input type="text" class="search-bar" id="search-bar" />
+            <label for="search-bar"
+              ><img src="/imgs/cliente-app/search.png" class="search-button"
+            /></label>
+          </div>
+
+          <div class="address">
+            <img
+              src="/imgs/cliente-app/local-pointer.png"
+              class="local-pointer"
+            />
+            <h2 class="customer-local">Você está aqui</h2>
+          </div>
+        </div>
+        <a href="/pages/cliente/cliente-app/cliente-app-carrinho.html"
+          ><img src="/imgs/cliente-app/cart.png" class="cart" />
+          <span class="cart-counter" id="cart-counter">0</span>
+        </a>
+      </div>
+
+      <div class="container-content payment-form">
+        <div class="info-to-pay">
+          <form action="" class="form-to-pay payment-form">
+            <h2>Informações De Pagamento</h2>
+            <label for="payment-method">Escolha a forma de pagamento: </label>
+
+            <select name="payment-method" id="payment-method">
+              <option value="credit">Cartão de Crédito</option>
+              <option value="debit">Débito</option>
+              <option value="zelle">PIX</option>
+            </select>
+
+            <label for="card-number">Número do Cartão</label>
+            <input type="number" id="card-number" />
+
+            <label for="card-name">Titular do Cartão</label>
+            <input type="text" id="card-name" />
+
+            <label for="card-ccv">CCV do Cartão</label>
+            <input type="number" id="card-ccv" />
+
+            <label for="card-ccv">Validade do Cartão</label>
+            <input type="number" id="card-ccv" />
+            <br />
+            <a href="" class="confirm one">Confirmar</a>
+          </form>
+
+          <form action="" class="form-to-pay client-address">
+            <h2>Forma de Entrega</h2>
+            <label for="delivery-method"
+              >Escolha a forma de recebimento:
+            </label>
+
+            <select name="delivery-method" id="delivery-method">
+              <option value="delivery">Delivery</option>
+              <option value="remove from store">Retirada</option>
+            </select>
+
+            <div class="city">
+              <label for="uf">UF:</label>
+              <select id="uf" required>
+                <option value="" disabled selected>Selecione o estado</option>
+                <option value="AC">AC</option>
+                <option value="AL">AL</option>
+                <option value="AM">AM</option>
+                <option value="AP">AP</option>
+                <option value="BA">BA</option>
+                <option value="CE">CE</option>
+                <option value="DF">DF</option>
+                <option value="ES">ES</option>
+                <option value="GO">GO</option>
+                <option value="MA">MA</option>
+                <option value="MT">MT</option>
+                <option value="MS">MS</option>
+                <option value="MG">MG</option>
+                <option value="PA">PA</option>
+                <option value="PB">PB</option>
+                <option value="PR">PR</option>
+                <option value="PE">PE</option>
+                <option value="PI">PI</option>
+                <option value="RJ">RJ</option>
+                <option value="RN">RN</option>
+                <option value="RS">RS</option>
+                <option value="RO">RO</option>
+                <option value="RR">RR</option>
+                <option value="SC">SC</option>
+                <option value="SP">SP</option>
+                <option value="SE">SE</option>
+                <option value="TO">TO</option>
+              </select>
+
+              <label for="cidade">Cidade:</label>
+              <select id="cidade" required>
+                <option value="" disabled selected>Selecione a cidade</option>
+                <option value="cidade1">Cidade 1</option>
+                <option value="cidade2">Cidade 2</option>
+                <option value="cidade3">Cidade 3</option>
+              </select>
+            </div>
+
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" placeholder="Endereço" required />
+
+            <label for="bairro">Bairro:</label>
+            <input type="text" id="bairro" placeholder="Bairro" required />
+
+            <div class="city">
+              <label for="numero">Número:</label>
+              <input type="text" id="numero" placeholder="Número" required />
+
+              <label for="cep">CEP:</label>
+              <input type="text" id="cep" placeholder="CEP" required />
+            </div>
+            <a href="" class="confirm two">Confirmar</a>
+          </form>
+        </div>
+        <a href="">Fechar Pedido</a>
+      </div>
+
+    </main>
+    <script src="/script/script.js"></script>
+  </body>
+</html>

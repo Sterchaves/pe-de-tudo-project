@@ -1,47 +1,110 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- STYLE -->
-        <link rel="stylesheet" href="/style/reset.css">
-        <link rel="stylesheet" href="/style/cliente-app/main-style.css">
- 
-    <title>CLIENTE APP - MEUS PEDIDOS </title>
-</head>
-<body class="container-mother">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- STYLE -->
+    <link rel="stylesheet" href="/style/reset.css" />
+    <link rel="stylesheet" href="/style/cliente-app/main-style.css" />
+    <link rel="stylesheet" href="/style/cliente-app/marketplace-home.css" />
+    <title>CLIENTE APP - Meus Pedidos</title>
+  </head>
+  <body class="container-mother">
     <header class="container-first-child">
-        <div>
-            <img src="/imgs/logo.png" id="logo">
-            <h2 class="name-id">@Fulano</h2>
-            <ul class="menu">
-                <li><a href="/pages/cliente/cliente-app/cliente-app-home.html">Marketplace</a></li>
-                <li><a href="/pages/cliente/cliente-app/cliente-app-meu-perfil.html">Meu Perfil</a></li>
-                <li><a href="#">Meus Pedidos</a></li>
-            </ul>
-        </div>
-        <h3><a href="/pages/cliente/cliente-app/cliente-app-suporte.html">Suporte</a></h3>
+      <div>
+        <img src="/imgs/logo.png" id="logo" />
+        <h2 class="name-id">@Fulano</h2>
+        <ul class="menu">
+          <li><a href="/pages/cliente/cliente-app/cliente-app-home.html">Marketplace</a></li>
+          <li>
+            <a href="/pages/cliente/cliente-app/cliente-app-meu-perfil.html"
+              >Meu Perfil</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              >Meus Pedidos</a
+            >
+          </li>
+        </ul>
+      </div>
+      <h3>
+        <a href="/pages/cliente/cliente-app/cliente-app-suporte.html"
+          >Suporte</a
+        >
+      </h3>
     </header>
 
     <main class="container-second-child">
-        <div class="container-header">
-                <div class="container-search">
-                    <div class="search-bar">
-                        <input type="text" class="search-bar" id="search-bar">
-                        <label for="search-bar"><img src="/imgs/cliente-app/search.png" class="search-button"></label>
-                    </div>
-                    
-                    <div class="address">
-                        <img src="/imgs/cliente-app/local-pointer.png" class="local-pointer">
-                        <h2 class="customer-local">Você está aqui</h2>
-                    </div>
+      <div class="container-header">
+        <div class="container-search">
+          <div class="search-bar">
+            <input type="text" class="search-bar" id="search-bar" />
+            <label for="search-bar"
+              ><img src="/imgs/cliente-app/search.png" class="search-button"
+            /></label>
+          </div>
+
+          <div class="address">
+            <img
+              src="/imgs/cliente-app/local-pointer.png"
+              class="local-pointer"
+            />
+            <h2 class="customer-local">Você está aqui</h2>
+          </div>
+        </div>
+        <a href="/pages/cliente/cliente-app/cliente-app-carrinho.html">
+          <img src="/imgs/cliente-app/cart.png" class="cart" />
+          <span class="cart-counter" id="cart-counter">0</span>
+         </a>
+      </div>
+
+      <div class="container-content">
+        <div class="products">
+          <!-- LINE START -->
+          <div class="product-line one">
+            <!-- PRODUCT START -->
+            <div class="product one">
+              <div class="product-image one"></div>
+              <div class="product-info one">
+                <h3 class="product-name one">1kg de Name One</h3>
+                <div class="purchase-adress one">
+                  <img src="/imgs/cliente-app/local-pointer.png" />
+                  <h4>Adress One</h4>
                 </div>
-                <a href=""><img src="/imgs/cliente-app/cart.png" class="cart"> </a>    
-        </div>
+                <div class="purchase-hour one">
+                  <img src="/imgs/cliente-app/clock.png" />
+                  <h4>Horário de Funcionamento: <span>11am-6pm</span></h4>
+                </div>
+                <h3 class="product-price one">R$ <span>6,99</span></h3>
+                <a href="" class="reservar">Reservar</a>
+            </div>
+            </div>
+            <!-- PRODUCT END -->
 
-        <div class="container-content">
-
+            <!-- PRODUCT START -->
+            <div class="product two">
+                <div class="product-image two"></div>
+                <div class="product-info two">
+                  <h3 class="product-name two">2kg de Name Two</h3>
+                  <div class="purchase-adress two">
+                    <img src="/imgs/cliente-app/local-pointer.png" />
+                    <h4>Adress Two</h4>
+                  </div>
+                  <div class="purchase-hour two">
+                    <img src="/imgs/cliente-app/clock.png" />
+                    <h4>Horário de Funcionamento: <span>9am-6pm</span></h4>
+                  </div>
+                  <h3 class="product-price two">R$ <span>3,55</span></h3>
+                  <a href="" class="reservar">Reservar</a>
+                </div>
+            </div>
+            <!-- PRODUCT END -->
+          </div>
+          <!-- LINE END -->
         </div>
+      </div>
     </main>
-</body>
+    <script src="/script/script.js"></script>
+  </body>
 </html>
