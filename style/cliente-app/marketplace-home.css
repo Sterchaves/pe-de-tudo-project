@@ -48,6 +48,8 @@
   margin-right: 0.5rem;
 }
 
+
+
 /* PRODUCT INFO GENERAL CONFIG */
 .products .product .product-info {
   display: flex;
@@ -86,6 +88,39 @@
   font-size: 2.4rem;
   font-weight: bold;
 }
+
+/* PRODUCTS IMAGES */
+.product-image.one{
+    background: url(/imgs/pera.jpg) center center;
+    background-size: cover;
+}
+
+.product-image.two{
+    background: url(/imgs/maca.jpg) center center;
+    background-size: cover;
+}
+
+.product-image.three{
+    background: url(/imgs/banana.jpg) center center;
+    background-size: cover;
+}
+
+.product-image.four{
+    background: url(/imgs/morango.jpg) center center;
+    background-size: cover;
+}
+
+.product-image.five{
+    background: url(/imgs/alho.jpg) center center;
+    background-size: cover;
+}
+
+.product-image.six{
+    background: url(/imgs/salsa.jpg) center center;
+    background-size: cover;
+}
+
+
 
 /* PÁGINA CARRINHO */
 .products .product .retirar {
@@ -352,3 +387,72 @@
     }
   }
   
+
+
+  /* PÁGINA MEU PERFIL */
+  /* MAIN SETTINGS PROFILE */
+
+  .my-profile{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navbar-profile{
+    background-color: rgb(196, 195, 195);
+    width: 28%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .container-content-myprofile{
+    background-color: rgb(197, 197, 197);
+    width: 50%;
+    height: 45rem;
+    margin: auto auto;
+    border-radius: 2.5rem;
+  }
+
+
+ /* NAVBAR SETTINGS PROFILE */
+
+ .navbar-profile .profile-image{
+    background-color: antiquewhite;
+    background: url(/imgs/photo-profile.jpg) no-repeat center center;
+    background-size: cover;
+    width: 180px;
+    height:180px;
+    border-radius: 100%;
+    margin: 2rem 0 1rem 0;
+ }
+
+ .navbar-profile .profile-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 13rem;
+ }
+
+ .navbar-profile h2{
+    margin-bottom: 4rem;
+ }
+
+ .navbar-profile li{
+    font-size: 24px;
+ }
+
+ .navbar-profile a{
+    color: black;
+    background-color: white;
+    padding: 0.5rem 5rem;
+    border-radius: 2.5rem;
+    margin-bottom: 1rem;
+ }
+
+ .navbar-profile a:hover{
+    text-decoration: underline;
+ }
