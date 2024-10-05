@@ -1,5 +1,4 @@
 // POP UP RESERVAR
-
   const reservarButtons = document.querySelectorAll('.reservar');
   function showPopup() {
 
