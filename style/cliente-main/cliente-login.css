@@ -45,7 +45,7 @@
    }
   
    
-   .container-login-cliente button{
+   .container-login-cliente .button-login{
       background-color:  rgb(255, 145, 0); 
       color: white; 
       border: none;
@@ -54,6 +54,8 @@
       font-family: Bebas Neue;
       margin: 3rem 0 6rem 0;
       padding: 0.5rem 3rem;
+      text-align: center;
+
   }
   
   .container-login-cliente .forgot-password, .register{

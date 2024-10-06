@@ -415,6 +415,9 @@
     height: 45rem;
     margin: auto auto;
     border-radius: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 3rem;
   }
 
 
@@ -455,4 +458,130 @@
 
  .navbar-profile a:hover{
     text-decoration: underline;
+ }
+
+
+ /* MINHA CONTA */
+
+ .container-content-myprofile .header{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+ }
+
+ .container-content-myprofile .header h2{
+  font-size: 30px;
+  margin-bottom: 1rem;
+ }
+
+ .container-content-myprofile .header img{
+  width: auto;
+  height: 20px;
+  position: absolute;
+  right: 17%;
+  bottom: 74%;
+ }
+
+ .container-content-myprofile .image-profile-edit{
+  display: flex;
+  font-size: 18px;
+  margin-bottom: 1rem;
+
+ }
+
+ .container-content-myprofile .image-profile-edit h3{
+  margin-right: 1.5rem;
+ }
+
+ .container-content-myprofile .image-profile-edit button{
+  border-radius: 2.5rem;
+  padding: 0.5rem 2rem;
+ }
+
+ .container-content-myprofile .profile-edit{
+  display: flex;
+  flex-direction: column;
+ }
+
+ .container-content-myprofile .profile-edit input{
+  border-radius: 2.5rem;
+  font-size: 18px;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+ }
+
+ .container-content-myprofile .profile-edit label{
+  font-size: 18px;
+ }
+
+ .container-content-myprofile .profile-edit button{
+width:40%;
+margin: 1.5rem auto;
+font-size: 25px;
+border-radius: 2.5rem;
+padding: 0.4rem 2rem;
+font-family: Bebas Neue, sans-serif;
+border: none;
+  }
+ 
+
+/* MEU ENDEREÇO - PROFILE */
+
+.container-content-myprofile .profile-edit.address {
+  width: 100%;
+ }
+
+ .container-content-myprofile .profile-edit.address input, .container-content-myprofile .profile-edit.address select{
+  border-radius: 2.5rem;
+  font-size: 18px;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1.3rem;
+  margin-right: 1rem;
+ }
+
+ .container-content-myprofile .profile-edit.address .city{
+  display: flex;
+  justify-content: start;
+  align-items: start;
+ }
+
+ .container-content-myprofile .profile-edit.address .city select{
+  width: 30%;
+ }
+
+ .container-content-myprofile .profile-edit.address .city input,  .container-content-myprofile .profile-edit.address .city #uf{
+  width: 15%;
+ }
+
+ .container-content-myprofile .profile-edit.address .city #cep{
+  width:30%;
+ }
+
+ .container-content-myprofile .profile-edit.address .city label{
+  margin-right: 0.5rem;
+ }
+
+
+ /* MEUS CARTÕES */
+ .container-content-myprofile .profile-edit.cards input{
+background: none;
+border: 2px solid black;
+ }
+
+ .container-content-myprofile .profile-edit.cards h2{
+  font-size: 30px;
+  text-align: end;
+ }
+
+ .container-content-myprofile .profile-edit.cards .card-cvv-valid{
+display: flex;
+ }
+
+ .container-content-myprofile .profile-edit.cards .card-cvv-valid input{
+  width: 35%;
+ }
+
+ .container-content-myprofile .profile-edit.cards .card-cvv-valid label{
+  margin-right: 0.7rem;
  }
