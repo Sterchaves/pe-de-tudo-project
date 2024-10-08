@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- STYLE -->
+    <link rel="stylesheet" href="/style/reset.css" />
+    <link rel="stylesheet" href="/style/parceiro-app/main-app.css" />
+    <title>PARCEIRO APP - MEU PERFIL - MINHA CONTA</title>
+  </head>
+  <body class="container-mother">
+    <header class="container-first-child">
+      <div>
+        <img src="/imgs/logo.png" id="logo" />
+        <h2 class="name-id">@Fulano</h2>
+        <ul class="menu">
+          <li>
+            <a href="/pages/parceiro/parceiro-app/parceiro-app-home.html"
+              >Meus Produtos</a
+            >
+          </li>
+          <li>
+            <a href="#">Meu Perfil</a>
+          </li>
+          <li>
+            <a
+              href="/pages/parceiro/parceiro-app/parceiro-app-meus-pedidos.html"
+              >Meus Pedidos</a
+            >
+          </li>
+        </ul>
+      </div>
+      <h3>
+        <a href="/pages/parceiro/parceiro-app/parceiro-app-suporte.html"
+          >Suporte</a
+        >
+      </h3>
+    </header>
+
+    <main class="container-second-child">
+      <div class="container-header">
+        <div class="container-search">
+          <div class="search-bar">
+            <input type="text" class="search-bar" id="search-bar" />
+            <label for="search-bar"
+              ><img src="/imgs/cliente-app/search.png" class="search-button"
+            /></label>
+          </div>
+        </div>
+        <div class="add-more-products">
+          <img src="/imgs/parceiro-app/add-btn.png" />
+          <a href="/pages/parceiro/parceiro-app/parceiro-app-add-produtos.html"
+            >Adicione Produtos</a
+          >
+        </div>
+      </div>
+
+      <div class="container-content">
+          <div class="my-profile">
+            <div class="navbar-profile">
+              <div class="about">
+                <div class="profile-image"></div>
+                <h2 class="profile-name">@Fulano</h2>
+              </div>
+              <div>
+                <ul class="profile-menu">
+                  <li><a href="/pages/parceiro/parceiro-app/parceiro-app-meu-perfil-home.html">Minha Conta</a></li>
+                  <li>
+                    <a
+                      href="/pages/parceiro/parceiro-app/parceiro-app-meu-perfil-endereco.html"
+                      >Endereço</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      >Dados Bancários</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="container-content-myprofile bank-info">
+                <div class="header">
+                    <h2>Dados Bancários</h2>
+                    <img src="/imgs/cliente-app/edit.png" alt="">
+                  </div>
+                  <form action="" class="bank-form">
+                    <label for="nome">Nome da Conta:</label>
+                    <input type="text" id="nome" required>
+  
+                    <label for="cpf-cnpj">CPF ou CNPJ da Conta:</label>
+                    <input type="number" id="cpf-cnpj" required>
+
+                    <label for="conta">Número da Conta:</label>
+                    <input type="number" id="conta" required>
+
+                    <label for="agency">Número da Agência:</label>
+                    <input type="number" id="agency" required>
+                  </form>
+                  <a href="">Confirmar Dados</a>
+            </div>
+          </div>
+      </div>
+    </main>
+    <script src="/script/script.js"></script>
+  </body>
+</html>

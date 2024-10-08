@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- STYLE -->
+    <link rel="stylesheet" href="/style/reset.css" />
+    <link rel="stylesheet" href="/style/parceiro-app/main-app.css" />
+    <title>PARCEIRO APP - MEU PERFIL - MINHA CONTA</title>
+  </head>
+  <body class="container-mother">
+    <header class="container-first-child">
+      <div>
+        <img src="/imgs/logo.png" id="logo" />
+        <h2 class="name-id">@Fulano</h2>
+        <ul class="menu">
+          <li>
+            <a href="/pages/parceiro/parceiro-app/parceiro-app-home.html"
+              >Meus Produtos</a
+            >
+          </li>
+          <li>
+            <a href="#">Meu Perfil</a>
+          </li>
+          <li>
+            <a
+              href="/pages/parceiro/parceiro-app/parceiro-app-meus-pedidos.html"
+              >Meus Pedidos</a
+            >
+          </li>
+        </ul>
+      </div>
+      <h3>
+        <a href="/pages/parceiro/parceiro-app/parceiro-app-suporte.html"
+          >Suporte</a
+        >
+      </h3>
+    </header>
+
+    <main class="container-second-child">
+      <div class="container-header">
+        <div class="container-search">
+          <div class="search-bar">
+            <input type="text" class="search-bar" id="search-bar" />
+            <label for="search-bar"
+              ><img src="/imgs/cliente-app/search.png" class="search-button"
+            /></label>
+          </div>
+        </div>
+        <div class="add-more-products">
+          <img src="/imgs/parceiro-app/add-btn.png" />
+          <a href="/pages/parceiro/parceiro-app/parceiro-app-add-produtos.html"
+            >Adicione Produtos</a
+          >
+        </div>
+      </div>
+
+      <div class="container-content">
+          <div class="my-profile">
+            <div class="navbar-profile">
+              <div class="about">
+                <div class="profile-image"></div>
+                <h2 class="profile-name">@Fulano</h2>
+              </div>
+              <div>
+                <ul class="profile-menu">
+                  <li><a href="/pages/parceiro/parceiro-app/parceiro-app-meu-perfil-home.html">Minha Conta</a></li>
+                  <li>
+                    <a
+                      href="#"
+                      >Endereço</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/pages/parceiro/parceiro-app/parceiro-app-meu-perfil-bank.html"
+                      >Dados Bancários</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="container-content-myprofile">
+                <div class="header">
+                    <h2>Meu Endereço</h2>
+                    <img src="/imgs/cliente-app/edit.png" alt="">
+                  </div>
+      
+                  <form action="" class="profile-edit address">
+                      <label for="endereco">Endereço:</label>
+                      <input type="text" id="endereco" placeholder="Endereço" required>
+          
+                      <label for="bairro">Bairro:</label>
+                      <input type="text" id="bairro" placeholder="Bairro" required>
+          
+                      <div class="city">
+                          <label for="uf">UF:</label>
+                          <select id="uf" required>
+                              <option value="" disabled selected>UF</option>
+                              <option value="AC">AC</option>
+                              <option value="AL">AL</option>
+                              <option value="AM">AM</option>
+                              <option value="AP">AP</option>
+                              <option value="BA">BA</option>
+                              <option value="CE">CE</option>
+                              <option value="DF">DF</option>
+                              <option value="ES">ES</option>
+                              <option value="GO">GO</option>
+                              <option value="MA">MA</option>
+                              <option value="MT">MT</option>
+                              <option value="MS">MS</option>
+                              <option value="MG">MG</option>
+                              <option value="PA">PA</option>
+                              <option value="PB">PB</option>
+                              <option value="PR">PR</option>
+                              <option value="PE">PE</option>
+                              <option value="PI">PI</option>
+                              <option value="RJ">RJ</option>
+                              <option value="RN">RN</option>
+                              <option value="RS">RS</option>
+                              <option value="RO">RO</option>
+                              <option value="RR">RR</option>
+                              <option value="SC">SC</option>
+                              <option value="SP">SP</option>
+                              <option value="SE">SE</option>
+                              <option value="TO">TO</option>
+                          </select>
+              
+                          <label for="cidade">Cidade:</label>
+                          <select id="cidade" required>
+                              <option value="" disabled selected>Selecione a cidade</option>
+                              <option value="cidade1">Cidade 1</option>
+                              <option value="cidade2">Cidade 2</option>
+                              <option value="cidade3">Cidade 3</option>
+                          </select>
+             
+                      </div>
+      
+                      <div class="city">
+                          <label for="numero">Número:</label>
+                          <input type="text" id="numero" placeholder="Número" required>
+              
+                          <label for="cep">CEP:</label>
+                          <input type="text" id="cep" placeholder="CEP" required>
+              
+                      </div>
+      
+                      <label for="complemento">Complemento (opcional):</label>
+                      <input type="text" id="complemento" placeholder="Complemento">
+          
+        
+                    <button>Confirmar</button>
+                  </form>
+            </div>
+          </div>
+      </div>
+    </main>
+    <script src="/script/script.js"></script>
+  </body>
+</html>
