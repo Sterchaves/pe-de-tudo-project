@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- STYLE -->
+    <link rel="stylesheet" href="/style/reset.css" />
+    <link rel="stylesheet" href="/style/parceiro-app/main-app.css" />
+    <title>PARCEIRO APP - ADD PRODUTOS</title>
+  </head>
+  <body class="container-mother">
+    <header class="container-first-child">
+      <div>
+        <img src="/imgs/logo.png" id="logo" />
+        <h2 class="name-id">@Fulano</h2>
+        <ul class="menu">
+          <li><a href="/pages/parceiro/parceiro-app/parceiro-app-home.html">Meus Produtos</a></li>
+          <li>
+            <a href="/pages/parceiro/parceiro-app/"
+              >Meu Perfil</a
+            >
+          </li>
+          <li>
+            <a href="/pages/parceiro/parceiro-app/parceiro-app-meus-pedidos.html"
+              >Meus Pedidos</a
+            >
+          </li>
+        </ul>
+      </div>
+      <h3>
+        <a href="/pages/parceiro/parceiro-app/parceiro-app-suporte.html"
+          >Suporte</a
+        >
+      </h3>
+    </header>
+
+    <main class="container-second-child">
+      <div class="container-header">
+        <div class="container-search">
+          <div class="search-bar">
+            <input type="text" class="search-bar" id="search-bar" />
+            <label for="search-bar"
+              ><img src="/imgs/cliente-app/search.png" class="search-button"
+            /></label>
+          </div>
+
+        </div>
+        <div class="add-more-products">
+            <img src="/imgs/parceiro-app/add-btn.png">
+            <a href="/pages/parceiro/parceiro-app/parceiro-app-add-produtos.html">Adicione Produtos</a>
+        </div>
+      </div>
+
+      <div class="container-content">
+        <div class="add-products">
+            <h2>Novo Produto</h2>
+            <div class="info-new-product">
+                <div class="new-product-image">
+                    <div class="new-image"></div>
+                    <a href="#">Carregar nova imagem</a>
+                </div>
+                <form action="" class="info-content">
+                    <label for="name-product">Nome do Produto: </label>
+                    <input type="text"  id="name-product" required>
+
+                    <label for="price">Preço: </label>
+                    <input type="number"  id="price" required>
+
+                    <label for="quantity">Quantidade disponivel (kg): </label>
+                    <input type="number"  id="quantity" required>
+    
+                </form>
+            </div>
+            <a href="" class="save-product">Salvar Produto</a>
+
+
+        </div>
+
+ 
+        
+      </div>
+    </main>
+    <script src="/script/script.js"></script>
+  </body>
+</html>

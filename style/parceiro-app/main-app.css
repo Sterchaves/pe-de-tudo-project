@@ -1,0 +1,503 @@
+
+.container-mother{
+    display: flex;
+    width: 100vw;
+    height: auto;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+/* MAIN NAVBAR */
+.container-first-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #bbbbbb;
+    width: 20vw;
+    height: 100vh;
+    font-size: 30px;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.container-first-child #logo{
+    width: auto;
+    height: 75px;
+    margin-bottom: 5rem;
+}
+
+.container-first-child .name-id{
+    font-size: 24px;
+    padding-bottom: 5rem;
+}
+
+.container-first-child .menu{
+    font-size: 30px;
+}
+
+.container-first-child .menu li{
+    margin: 1.5rem 0;
+}
+
+.container-first-child .menu li a{
+    color: black;
+    transition: 0.1s ease-in-out;
+}
+
+.container-first-child .menu li a:hover{
+    font-weight: bold;
+}
+
+.container-first-child h3 a{
+    font-size: 33px;
+    color: black;
+    font-weight: normal;
+    transition: 0.1s ease-in-out;
+}
+
+.container-first-child h3 a:hover{
+    font-weight: bold;
+}
+
+
+/* SEARCH AND LOCAL */
+.container-second-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.container-second-child .container-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 2rem 10%;
+    width: 80vw;
+    height: 8vh;
+}
+
+/* SEARCH */
+.container-second-child .container-header .container-search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:50vw;
+ 
+}
+
+.container-second-child .container-header .container-search .search-bar{
+display: flex;
+align-items: center;
+flex-direction: row-reverse;
+}
+
+.search-button{
+    width: auto;
+    height: 30px;
+    padding-right: 1rem;
+}
+
+.container-second-child .container-header .container-search .search-bar input{
+    padding: 1px 2px 1px 7px;
+    font-size: 20px;
+    width: 17vw; 
+    height: 40px;
+    border-radius: 2.5rem;
+}
+
+/* LOCAL */
+.container-second-child .container-header .address{
+    display: flex;
+    align-items: center;
+}
+
+.container-second-child .container-header .address .local-pointer{
+    width:auto;
+    height:30px;  
+    margin: 0 1rem;
+}
+
+/* BTN ADD MORE PRODUCTS */
+.container-second-child .container-header .add-more-products{
+display: flex;
+text-align: center;
+background-color: #d8d8d8;
+width: 22rem;
+padding: 0.7rem 1rem;
+border-radius: 2.5rem;
+align-items: center;
+}
+
+.container-second-child .container-header .add-more-products img{
+    width: auto;
+    height: 22px;
+    margin-right: 1rem;
+}
+
+.container-second-child .container-header .add-more-products a {
+    color: black;
+    font-size: 25px;
+}
+
+/* MAIN CONTENT */
+.container-second-child .container-content{
+    background-color: rgb(20, 135, 243);
+    width: 65vw;
+    height: 75vh;
+    border-radius: 2.5rem;
+    overflow: auto;
+
+}
+
+ 
+
+/* PÁGINA MEUS PRODUTOS */
+/* PRODUCT MAIN CONTENT */
+
+.products {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    width: 100%;
+    height: auto;
+  }
+  
+  .products .product-line {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    margin: 2rem;
+    width: 90%;
+  }
+  
+  .products .product {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    margin: 1rem;
+    width: 50%;
+    height: 20rem;
+    border-radius: 2.5rem;
+  }
+  
+  /* PRODUCT IMAGES GENERAL CONFIG */
+  .products .product .product-image {
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+    background-color: #8b8b8b;
+  }
+  
+  .products .product .purchase-adress img {
+    width: auto;
+    height: 20px;
+    margin-right: 0.5rem;
+  }
+  
+  .products .product .purchase-hour img {
+    width: auto;
+    height: 20px;
+    margin-right: 0.5rem;
+  }
+  
+  
+  
+  /* PRODUCT INFO GENERAL CONFIG */
+  .products .product .product-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .products .product .product-name {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .products .product .purchase-adress {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 14px;
+    margin-bottom: 0.1rem;
+  }
+  
+  .products .product .purchase-hour {
+    display: flex;
+    font-size: 14px;
+    flex-wrap: wrap;
+    margin-bottom: 0.1rem;
+  }
+  
+  .products .product .product-price span {
+    font-size: 33px;
+  }
+  
+  
+  /* PRODUCTS IMAGES */
+  .product-image.one{
+      background: url(/imgs/pera.jpg) center center;
+      background-size: cover;
+  }
+  
+  .product-image.two{
+      background: url(/imgs/maca.jpg) center center;
+      background-size: cover;
+  }
+  
+  .product-image.three{
+      background: url(/imgs/banana.jpg) center center;
+      background-size: cover;
+  }
+  
+  .product-image.four{
+      background: url(/imgs/morango.jpg) center center;
+      background-size: cover;
+  }
+  
+  .product-image.five{
+      background: url(/imgs/alho.jpg) center center;
+      background-size: cover;
+  }
+  
+  .product-image.six{
+      background: url(/imgs/salsa.jpg) center center;
+      background-size: cover;
+  }
+
+
+
+
+  /* PÁGINA ADICIONAR PRODUTO */
+
+  .container-content .add-products{
+    background-color: white;
+    width: 60%;
+    height: 38rem;
+    margin: 6rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2.5rem;
+  }
+
+  .container-content .add-products h2{
+    font-size: 32px;
+    margin-top: 2rem;
+  }
+  .container-content .add-products .info-new-product{
+    display: flex;
+    margin-top: 3rem;
+    width: 90%;
+    justify-content: space-evenly;
+  }
+
+  .container-content .add-products .info-new-product .new-product-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+
+  .container-content .add-products .info-new-product .new-product-image .new-image{
+    background-color: #8b8b8b;
+    width: 140px;
+    height: 140px;
+    border-radius: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .container-content .add-products .info-new-product .new-product-image a{
+    background-color: #cfcfcf;
+    color: black;
+    border-radius: 2.5rem;
+    padding: 0.3rem 2rem;
+    font-size: 12px;
+    border: 2px solid black;
+  }
+
+  .container-content .add-products .info-new-product form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .container-content .add-products .info-new-product form input{
+    border: 2px solid black;
+    border-radius: 2.5rem;
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .container-content .add-products .info-new-product form label{
+    font-size: 15px;
+  }
+
+  .container-content .add-products .save-product{
+    margin-top: 3rem;
+    background-color: #d8d8d8;
+    color: black;
+    padding: 0.7rem 4rem;
+    font-size: 3rem;
+    border-radius: 2.5rem;
+  }
+
+  /* PÁGINA SUPORTE */
+  
+
+/* FAQ */
+.container-faq {
+    height: 70rem;
+    text-align: center;
+    padding: 4rem 0;
+  }
+  
+  .container-faq h1 {
+    font-size: 55px;
+    font-weight: normal;
+    margin: 6rem 0;
+  }
+  
+  .container-faq .categories {
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+  }
+  
+  .container-faq .category {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    border-bottom: 1px solid #0000004b;
+    margin-top: 1rem;
+  }
+  
+  .container-faq .category .pergunta {
+    font-size: 35px;
+    font-weight: normal;
+    width: 100%;
+    text-align: start;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: ease-in-out 0.5ms;
+  }
+  
+  .container-faq .category .pergunta:hover {
+    color: #dadada;
+  }
+  
+  .container-faq .category .resposta {
+    display: none;
+    padding-bottom: 15px;
+    font-size: 15px;
+    font-weight: 300;
+  }
+  
+  /* PERGUNTA ATIVA */
+  .container-faq .category.ativo .resposta {
+    display: block;
+    font-family: Open sans;
+    font-size: 18px;
+    font-weight: normal;
+  }
+  
+  .container-faq .category.ativo {
+    padding: 0.2rem 0 1rem 0;
+  }
+  
+  @media (max-width: 480px) {
+    .container-faq {
+      height: 60rem;
+      text-align: center;
+      padding: 4rem 0;
+    }
+  
+    .container-faq h1 {
+      font-size: 40px;
+      font-weight: normal;
+      margin: 6rem 0;
+    }
+  
+    .container-faq .category .pergunta {
+      font-size: 28px;
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  }
+  
+  @media (max-width: 370px) {
+    .container-faq {
+      height: 70rem;
+      text-align: center;
+      padding: 4rem 0;
+    }
+  
+    .container-faq h1 {
+      font-size: 40px;
+      font-weight: normal;
+      margin: 6rem 0;
+    }
+  
+    .container-faq .category .pergunta {
+      font-size: 28px;
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  }
+  
+
+  /* PÁGINA - MEUS PEDIDOS */
+
+  .container-content .meus-pedidos{
+    width: 96%;
+    height: auto;
+    max-width: 97%;
+    display: flex;
+    flex-wrap: wrap;
+    padding:2rem 1rem;
+    justify-content: center;
+    margin: 2rem auto;
+  }
+
+  .container-content .meus-pedidos .pedido{
+    background-color: white;
+    width:40%;
+    border-radius: 2.5rem;
+    height: 24rem;
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    margin: 1rem 2rem;
+    }
+
+    .container-content .meus-pedidos .pedido h2{
+        margin: 1rem 0;      
+    }
+
+  .container-content .meus-pedidos .pedido a{
+    background-color: rgb(170, 170, 170);
+    color: black;
+    padding: 0.5rem 3rem;
+    border-radius: 2.4rem;
+    font-size: 20px;
+    display: inline-block;
+    margin: 1rem 0;
+   }
+
+
+    /* MEU PERFIL - MAIN */
+
+
+    
+   /* MEU PERFIL - MINHA CONTA */
+
+    /* MEU PERFIL - ENDEREÇO */
+
+
+     /* MEU PERFIL - DADOS BANCÁRIOS */
