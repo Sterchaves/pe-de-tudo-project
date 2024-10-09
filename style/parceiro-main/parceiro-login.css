@@ -12,9 +12,16 @@
   }
   
   /* FORM */
-  
+  .container-login-parceiro h1{
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    margin-top: 2rem;
+    font-weight: lighter;
+}
+
   .container-login-parceiro h2{
-      font-size: 40px;
+      font-size: 30px;
       color: black;
       text-align: center;
       margin-top: 2rem;

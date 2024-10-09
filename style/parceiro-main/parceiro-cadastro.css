@@ -17,11 +17,12 @@
     font-size: 40px;
     color: black;
     text-align: center;
+    margin-bottom: 1.5rem;
 }
 
 .container-cadastro-parceiro form {
   width: 606px;
-  height: 1108px;
+  height: 120rem;
   font-size: 24px;
   background-color: rgba(255, 255, 255, 0.856);
   display: flex;
@@ -39,10 +40,11 @@
 .container-cadastro-parceiro input, select, option{
     height: 44px;
     border-radius: 2.5rem;
-    margin: 1rem 0;
+    margin: 0.7rem 0 2rem 0;
     padding: 0.5rem 1rem;
 }
 
+ 
 .container-cadastro-parceiro .city{
     display: flex;
     justify-content: space-between;
