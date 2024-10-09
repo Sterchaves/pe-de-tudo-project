@@ -157,12 +157,12 @@
   flex-direction: row;
   justify-content: space-evenly;
   align-items: start;
-
   height: auto;
   margin: 2rem auto;
-  max-width: 99%;
+  width: 99%;
  }
 
+ /*
 .products .product-line {
   display: flex;
   flex-direction: row;
@@ -172,6 +172,7 @@
   margin: 1rem;
   width: 100%;
 }
+  */
 
 .products .product {
   display: flex;
@@ -182,7 +183,7 @@
   width: 45%;
   height: 20rem;
   border-radius: 2.5rem;
-  flex-grow: 0.4;
+  flex-grow: 0.3;
   min-width: 400px; 
 }
 
