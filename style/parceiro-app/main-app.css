@@ -93,16 +93,21 @@
 
 .search-button {
   width: auto;
-  height: 30px;
+  height: 25px;
   padding-right: 1rem;
+  position: absolute;
+  top: 9%;
+  right: 55.4%;
+  transform:  scaleX(-1);
 }
 
 .container-second-child .container-header .container-search .search-bar input {
-  padding: 1px 2px 1px 7px;
+  padding: 1px 3.5rem 1px 7px;
   font-size: 20px;
   width: 17vw;
   height: 40px;
   border-radius: 2.5rem;
+  position: relative;
 }
 
 /* LOCAL */
